@@ -1,0 +1,13 @@
+=> Qonquer all skills that are needed for Front End 
+  + Html 
+  + Css
+  + JavaScipt
+=+ Library js 
+  +  React
+  +  Angular
+  +  Vue
+  +  Node.js and next Js
+
+
+=> Creating project that were meant to help people and displaying itself
+=> Become an expert Front end web developer at around 2025 - 2026 years
