@@ -158,7 +158,7 @@ table {
 }
 
 body {
-    background: url(img/retina_wood.png);
+    background: url(/img/retina_wood.png);
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
