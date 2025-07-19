@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ddd;
+    text-align: center;
+    padding: 20px;
+
+    background-color: #222;
+} 
+
+
+
+.Gallery {
+    border: 5px double blue;
+    width: min-content;
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    
+    'Jumbo Jumbo'
+    'thumb thumb'
+    ;    
+    justify-items: center;
+    align-items: center;
+    margin: 20px auto;
+
+}
+
+ul {
+    grid-area: thumb;
+
+    list-style: none;
+    width: 100%;
+    
+    display: grid;
+   
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    
+}
+
+.Jumbo {
+    height: 600px;
+    width: 1200px;
+    grid-area: Jumbo;
+
+
+}
+
+.container h1 {
+    color: #fefe;
+    
+}
+
+img:not(.Jumbo){
+    display: block;
+    width: 100%;
+    height: 217px;
+    
+    
+}
+
+img:hover:not(.Jumbo) {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@keyframes fadein {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadein 2s forwards;
+}
+
+.active {
+    opacity: 0.5;
+
+}
+
+img, .Jumbo {
+    border: 3px double blue;
+    border-radius: 0px 0px 0px 0px;
+}

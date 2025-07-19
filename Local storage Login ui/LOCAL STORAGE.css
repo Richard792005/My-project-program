@@ -1,0 +1,637 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0c0c0c 0%, #16213e 25%, #16213e 50%, #0f3460 60%, #533a71 100%);
+    color: white;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+:root {
+    /* linear gradient 135deg */
+    --warnaBackground1: #0c0c0c; /* 0% */
+    --warnaBackground2: #16213e; /* 25% */
+    --warnaBackground3: #16213e; /* 50% */
+    --warnaBackground4: #0f3460; /* 60% */
+    --warnaBackground5: #533a71; /* 100 % */
+
+    --background-box1 : rgba(225, 255, 255, 0.4) ;
+    --background-box2 : rgba(225, 255, 255, 0.5) ;
+    --box-shadow : rgba(102, 126, 234, 0.4) ; /* 0px 4px 15px */
+    
+    /* linear gradient 45deg */
+    --background-floating-shape1 : rgba(102, 126, 234, 0.1);
+    --background-floating-shape2 : rgba(102, 126, 234, 0.1);
+    
+
+    --warna2: #9A031E;
+    --warna3: ##FF36AB;
+    --warna4: #A40606;
+    --warna5: #230007;
+    --warna6: #5A0002;
+    --warna7: #F5F1ED;
+    --warna8: #320D6D;
+    --warna9: #FD151B;
+    --warna10: #FD353C;
+    --warna11: #FD5D63;
+    --warna12: #0AC2FF;
+    --warna12: #2FC64A;
+}
+
+/* ISI CONTAINER */
+.form-container {
+    width: 100%;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(225, 225, 225, 0.4);
+    border-radius: 20px;
+    padding: 1%;
+    width: 25%;
+    margin: 5% auto;
+    transform: translateY(0);
+    transition: all 0.3s ease-in;
+}
+
+.container:hover {
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.4);
+    transform: translateY(-20px);
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 5%;
+    width: 70%;
+    padding: 1.9%;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.toggle {
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 4%;
+    background: transparent;
+    flex: 1;
+    position: relative;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+.toggle.active {
+    color: #fff;
+    background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.7em;
+    margin: 8% auto;
+}
+
+header h1 {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#button-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+#button-account input {
+    padding: 2.9%;
+    width: 24%;
+    font-size: 1em;
+    font-style: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--warna7);
+    font-weight: 550;
+}
+
+#email {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.form-input {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'email'
+        'pass'
+        'sign'
+    ;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.form-input input:focus {
+    border-style: none;
+}
+
+.form-input input {
+    padding: 4%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: whitesmoke;
+    border: 1px solid var(--warna7);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    outline: none;
+
+    margin-bottom: 8%;
+    font-size: 1.1em
+}
+
+.form-input input::placeholder {
+    color: rgba(225, 225, 225, 0.4);
+}
+
+.form-input input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+    transform: translateY(-2px);
+}
+
+.form-input {
+    position: relative;
+}
+
+.form-input input {}
+
+.form-input input:nth-child(1) {
+    grid-area: email;
+}
+
+.form-input input:nth-child(2) {
+    grid-area: pass;
+}
+
+.form-input .sign-button {
+    grid-area: sign;
+    border: 1px solid var(--warna7);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    font-size: 1.1em;
+    color: var(--warna7);
+    padding: 3%;
+    background: linear-gradient(45deg, var(--warna1)0%, var(--warna10));
+    font-weight: 700;
+    box-shadow: 0px 4px 15px rgba(102, 126, 234, 0.4);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s;
+    position: relative;
+
+}
+
+/* ini penting */
+.form-input .sign-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+    /* tambahkan ini biar kelihatan */
+    width: 100%;
+    height: 100%;
+}
+
+/* selesai */
+
+.form-input .sign-button:hover {
+    transform: translateY(-2px);
+}
+
+.form-input .sign-button:hover::before {
+    left: 100%;
+}
+
+.bawah {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.create-button {
+    cursor: pointer;
+    padding: 3%;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--warna7);
+    border: 1px solid var(--warna7);
+    border-radius: 10px;
+    background: linear-gradient(45deg, var(--warna1)0%, var(--warna10));
+    box-shadow: 0px 5px 15px rgba(102, 126, 234, 0.4);
+    position: relative;
+    /* ini penting agar tidak keluar */
+    overflow: hidden;
+
+}
+
+.create-button:hover {
+    transform: translateY(-2px);
+}
+
+.create-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    width: 100%;
+    height: 100%;
+    transition: left 0.5s;
+
+}
+
+.create-button:hover::before {
+    left: 100%;
+}
+
+.regis-formContainer {
+    transition: all 0.9s;
+}
+
+.Login-formContainer {
+    transition: all 0.9s;
+}
+
+
+
+
+/* SELESAI */
+
+
+/* SOCIAL BUTTON */
+.social-btn {
+    cursor: pointer;
+    padding: 2%;
+    margin-bottom: 4%;
+    color: white;
+    border: 1px solid rgba(225, 225, 225, 0.2);
+    border-radius: 10px;
+    background: rgba(225, 225, 225, 0.4);
+    font-size: 1.0em;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-icon {
+    width: 18px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.social-btn:hover {
+    background: rgba(225, 225, 225, 0.2);
+    transform: translateY(-2px);
+}
+
+/* SELESAI */
+
+/* DISABLE CONTROL */
+
+.regis-formContainer.disable {}
+
+.Login-formContainer.disable {}
+
+
+/* ANIMASI LOGIN DAN REGIS */
+.container {
+    height: 690px;
+}
+
+.Login-formContainer,
+.regis-formContainer {
+    position: absolute;
+    /* supaya tidak numpuk */
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    /* transform: translateX(-50px); */
+    transform: translateY(-50px);
+    transition: all 1s ease;
+    pointer-events: none;
+}
+
+.container.active {
+    height: 550px;
+}
+
+/* .Login-formContainer.active,
+.regis-formContainer.active {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+} */
+
+
+.Login-formContainer.active,
+.regis-formContainer.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    z-index: 1;
+}
+
+.Login-formContainer.active {
+    top: 14%;
+}
+
+.regis-formContainer.active {
+    top: 12%;
+}
+
+/* SELESAI */
+
+
+/* ANIMATION FLOATING SHAPE  */
+.floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    animation: floatShape 8s infinite ease-in-out;
+    z-index: 0;
+}
+
+.shape-1 {
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.shape-2 {
+    width: 60px;
+    height: 60px;
+    top: 70%;
+    right: 15%;
+    animation-delay: 2s;
+}
+
+.shape-3 {
+    width: 40px;
+    height: 40px;
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 4s;
+}
+
+@keyframes floatShape {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(180deg);
+    }
+}
+
+.bg-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: float 6s infinite ease-in-out;
+
+    /* animation-duration: 6s;
+    animation-delay: ;
+    left: ;
+    top: ; */
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+        opacity: 0.8;
+    }
+}
+
+/* SELESAI */
+
+
+/* Control flow of Media screen */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 50%;
+        margin: 10% auto;
+    }
+
+    
+}
+
+/* Seleasai */
+
+/* CONTROL DISABLE */
+.toggle.disable {
+    display: none;
+}
+
+/* NONE */
+
+input:invalid {
+    border: none;
+    outline: 2px solid red;
+}
+
+input:valid {
+    border: 1px solid var(--warna7);
+    outline: inherit;
+}

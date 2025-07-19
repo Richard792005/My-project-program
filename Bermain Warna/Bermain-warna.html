@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program - warna</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        margin: 4% auto;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    section{
+        margin-bottom: 50px;
+    }
+
+    #a h1 {
+        font-size: 3em;
+        margin-bottom: 50px;
+       
+    }
+
+    #a button {
+        padding: 10px ;
+        cursor: pointer;
+        width: 15%;
+        font-size: 1.5em;
+        border-radius: 10px;
+        margin: auto 30px;
+        background-color: #222;
+        color: #fefefe;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+
+    }
+
+    .kotak {
+        padding: 2em;
+        max-width: 25px;
+        height: 25px;
+        margin: 10px auto;
+    }
+
+    .besar {
+        padding: 2em;
+        max-width: 500px;
+        height: 400px;
+        margin: 10px auto;
+        border-radius: 15px;
+        box-shadow: 0px 0px 4px 10px rgba(0, 0, 255, 0.2);
+    }
+
+    .Transparent {
+        background-color: #E0E2DB;
+    }
+
+    .Merah {
+        background-color: red;
+    }
+
+    .Hijau {
+        background-color: green;
+    }
+
+    .Biru {
+        background-color: blue;
+    }
+
+    #b input {
+        width: 400px;
+        border-radius: 20px;
+    }
+
+</style>
+<body>
+    <section id="a">
+        <h1>Bermain dengan warna</h1>
+        <button type="button">Click me to change color background!</button>
+        <button type="button">Click me to change color Text!</button>
+
+    </section>
+    <section id="b">
+        <div class="kotak Merah"></div>
+        <input type="range" name="slider1" min="1" max="255" id="">
+        <div class="kotak Hijau"></div>
+        <input type="range" name="slider2" min="1" max="255" id="">
+        <div class="kotak Biru"></div>
+        <input type="range" name="slider3" min="1" max="255" id="">
+    </section>
+    <section id="c" >
+        <div class="besar Transparent"></div>
+    </section>
+
+
+    <script src="Bermain-warna.js"></script>
+</body>
+</html>
